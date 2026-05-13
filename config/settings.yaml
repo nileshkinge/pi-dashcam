@@ -1,0 +1,36 @@
+recording:
+  width: 1280
+  height: 720
+  framerate: 25
+  segment_duration_seconds: 60
+  codec: h264
+  bitrate: 6000000
+  annotate_timestamp: true
+  camera_index: 0
+
+storage:
+  base_path: ./recordings
+  preferred:
+    - usb
+    - sd
+
+retention:
+  max_segments: 300
+  max_size_gb: 16
+  min_free_space_gb: 1
+
+logging:
+  path: ./logs/dashcam.log
+  level: INFO
+  max_bytes: 5242880
+  backup_count: 3
+
+api:
+  enabled: true
+  host: 0.0.0.0
+  port: 8080
+
+gps:
+  enabled: false
+  device: /dev/serial0
+  baud_rate: 9600

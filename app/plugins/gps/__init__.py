@@ -1,0 +1,1 @@
+# GPS plugin package placeholder
