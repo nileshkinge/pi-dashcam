@@ -9,7 +9,7 @@ recording:
   camera_index: 0
 
 storage:
-  base_path: ./recordings
+  base_path: /var/lib/dashcam/recordings
   preferred:
     - usb
     - sd
@@ -20,7 +20,7 @@ retention:
   min_free_space_gb: 1
 
 logging:
-  path: ./logs/dashcam.log
+  path: /var/log/dashcam/dashcam.log
   level: INFO
   max_bytes: 5242880
   backup_count: 3
